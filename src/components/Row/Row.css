@@ -1,0 +1,31 @@
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 2rem 4rem;
+}
+.row h1 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+.row__movies-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  justify-content: flex-start;
+}
+.row__movies-container::-webkit-scrollbar {
+  display: none;
+}
+.row__movies-container img {
+  width: 12rem;
+  margin-right: 1rem;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+.row__movies-container img:hover {
+  transform: scale(1.07);
+}
