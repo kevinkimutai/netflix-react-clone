@@ -1,0 +1,25 @@
+.subscription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.subscription__plan {
+  font-size: 1.7rem;
+}
+
+.subscription button {
+  padding: 0.5rem 1.5rem;
+  color: var(--color-white);
+  outline: none;
+  border: 0;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.button--red {
+  background: var(--color-red);
+}
+.button--gray {
+  background: #999;
+}

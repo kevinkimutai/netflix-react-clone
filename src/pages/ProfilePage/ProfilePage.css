@@ -1,0 +1,73 @@
+.profile {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile__container {
+  width: 60rem;
+  padding: 2rem;
+}
+.profile__container h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.profile__line {
+  height: 0.1rem;
+  width: 100%;
+  background: #999;
+}
+.profile__contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: start;
+  margin-top: 2rem;
+
+  border: 0 2rem;
+  border-color: #fff;
+}
+.profile__contents-image {
+  width: 10rem;
+  margin-right: 2rem;
+}
+.profile__contents-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.profile__contents-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.profile__contents-details__email {
+  width: 100%;
+  background: #999;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+.profile__contents-details__email p {
+  padding: 1rem 0.5rem;
+  color: var(--color-white);
+}
+
+.profile__contents-details__plans h2 {
+  font-size: 1.5rem;
+}
+.profile__contents-details__plans__date {
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+}
+.profile__sign-out-btn {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  color: #fff;
+  background: var(--color-red);
+  outline: none;
+  border: 0;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}

@@ -1,5 +1,7 @@
 import { React, useState, useEffect } from "react";
 
+import { Link } from "react-router-dom";
+
 import avatar from "../../assets/images/avatar.png.png";
 import logo from "../../assets/images/netflix-logo.png";
 
@@ -25,8 +27,13 @@ const Navbar = () => {
 
   return (
     <div className={`navbar section__padding ${navShow && `navbar__black`} `}>
-      <img className="navbar__img-logo" src={logo} alt="netflix" />
-      <img className="navbar__img-avatar" src={avatar} alt="avatar" />
+      <Link to="/">
+        <img className="navbar__img-logo" src={logo} alt="netflix" />
+      </Link>
+
+      <Link to="/profile">
+        <img className="navbar__img-avatar" src={avatar} alt="avatar" />
+      </Link>
     </div>
   );
 };
