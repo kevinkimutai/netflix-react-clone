@@ -49,6 +49,7 @@ const SignIn = () => {
       passwordRef.current.value
     )
       .then((user) => {
+        console.log(user);
         //LOGGED IN
       })
       .catch((error) => {

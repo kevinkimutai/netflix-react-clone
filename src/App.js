@@ -21,6 +21,7 @@ function App() {
       if (userAuth) {
         const { email, uid } = userAuth;
         const userSignIn = { email, uid };
+        console.log(userSignIn);
 
         dispatch(userActions.login({ userSignIn }));
       } else {
@@ -34,17 +35,16 @@ function App() {
   console.log(user);
 
   return (
-    
+    <>
       {!user ? (
         <LoginPage />
       ) : (
-          
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/profile" element={<ProfilePage />} />
         </Routes>
       )}
-    
+    </>
   );
 }
 
