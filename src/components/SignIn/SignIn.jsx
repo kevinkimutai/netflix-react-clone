@@ -1,5 +1,4 @@
 import { React, useState, useRef } from "react";
-import { useDispatch } from "react-redux";
 
 import {
   getAuth,
@@ -9,12 +8,9 @@ import {
 
 import app from "../../lib/firebase";
 
-import { userActions } from "../../store/user";
-
 import "./SignIn.css";
 
 const SignIn = () => {
-  const dispatch = useDispatch();
   const emailRef = useRef();
   const passwordRef = useRef();
   const [toggleSignUp, setToggleSignUp] = useState(false);
