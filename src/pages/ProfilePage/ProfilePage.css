@@ -71,3 +71,9 @@
   font-size: 1.8rem;
   margin-top: 1rem;
 }
+
+@media screen and (max-width: 500px) {
+  .profile__contents {
+    flex-direction: column;
+  }
+}

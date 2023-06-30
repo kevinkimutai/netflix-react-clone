@@ -39,6 +39,16 @@ const LoginPage = () => {
               <input placeholder="Email address" />
               <button>get started</button>
             </div>
+            <div className="login-p__wrapper">
+              <p
+                className="login-p"
+                onClick={() => {
+                  setshowSignIn(true);
+                }}
+              >
+                Already Have an Account, Log in
+              </p>
+            </div>
           </>
         )}
       </div>

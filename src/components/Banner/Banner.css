@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  min-height: 80vh;
+  height: 80vh;
   position: relative;
   font-family: var(--font-family);
 }
@@ -28,7 +28,11 @@
   flex-direction: row;
 }
 .banner__details-buttons button {
-  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  padding: 1rem 0;
   font-size: 1.5rem;
   text-transform: capitalize;
   border-radius: 0.5rem;
@@ -43,7 +47,6 @@
   background: var(--color-white);
   margin-right: 2rem;
   color: #000;
-  font-weight: 400;
 }
 
 .banner__details-buttons button:last-child {
@@ -61,4 +64,10 @@
     rgba(20, 20, 20, 0.6),
     #141414
   );
+}
+
+@media screen and (max-width: 640px) {
+  .banner__details-container {
+    padding: 2rem;
+  }
 }

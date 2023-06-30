@@ -1,0 +1,20 @@
+.youtube-video {
+  height: 85vh;
+}
+.back-container {
+  border-radius: 50%;
+  background: var(--color-white);
+  padding: 2rem;
+  width: fit-content;
+  cursor: pointer;
+}
+.back-icon {
+  font-size: 2rem;
+  color: var(--color-black);
+}
+.div-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}

@@ -21,3 +21,14 @@
   width: 3rem;
   object-fit: contain;
 }
+
+@media screen and (max-width: 640px) {
+  .navbar {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .navbar {
+    padding: 1rem;
+  }
+}

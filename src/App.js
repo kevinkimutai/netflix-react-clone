@@ -11,6 +11,7 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import HomePage from "./pages/HomePage/HomePage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
+import MovieId from "./pages/MovieId/MovieId";
 
 function App() {
   const dispatch = useDispatch();
@@ -21,7 +22,7 @@ function App() {
       if (userAuth) {
         const { email, uid } = userAuth;
         const userSignIn = { email, uid };
-        console.log(userSignIn);
+        
 
         dispatch(userActions.login({ userSignIn }));
       } else {
@@ -32,7 +33,7 @@ function App() {
   }, [dispatch]);
 
   const user = useSelector((state) => state.user.user.email);
-  console.log(user);
+
 
   return (
     <>
@@ -42,6 +43,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/movie/:id" element={<MovieId />} />
         </Routes>
       )}
     </>

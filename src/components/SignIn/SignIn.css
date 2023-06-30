@@ -42,6 +42,7 @@
   border: 0;
   margin-bottom: 1rem;
   align-items: center;
+  cursor: pointer;
 }
 
 .signin__options {

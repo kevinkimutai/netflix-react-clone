@@ -1,5 +1,5 @@
-const APIURL = "https://api.themoviedb.org/3";
-const API_KEY = "a6c4d86ec6e189e00bac2015305f81c0";
+export const APIURL = "https://api.themoviedb.org/3";
+export const API_KEY = "a6c4d86ec6e189e00bac2015305f81c0";
 //api.themoviedb.org/3/movie/550?api_key=a6c4d86ec6e189e00bac2015305f81c0
 
 export const base_url = "https://image.tmdb.org/t/p/original";
@@ -14,3 +14,5 @@ export const requests = {
   fetchRomance: `${APIURL}/discover/movie?api_key=${API_KEY}&with_genres=10749`,
   fetchDocumentaries: `${APIURL}/discover/movie?api_key=${API_KEY}&with_genres=99`,
 };
+
+// https://api.themoviedb.org/3/movie/{movie_id}/videos
